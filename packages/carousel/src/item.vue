@@ -64,6 +64,7 @@
       },
 
       calculateTranslate(index, activeIndex, parentWidth) {
+        console.log(`calculateTranslate`)
         if (this.inStage) {
           return parentWidth * ((2 - CARD_SCALE) * (index - activeIndex) + 1) / 4;
         } else if (index < activeIndex) {
